@@ -168,8 +168,7 @@ Para a criação de um novo produto é necessário um requisição do tipo **POS
  - itens [ ] Array de itens adicionais (CheckList)
 	
 Exemplo:
-	
-	 - nome: TESTE
+ - nome: TESTE
 	 - descricao: novo produto
 	 - qtd_estoque: 21
 	 - preco: 12
@@ -256,6 +255,6 @@ RESPOSTA:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDM5NDQ5OCwtMTYyMDAwODY0NiwzNT
-g4OTg5MTldfQ==
+eyJoaXN0b3J5IjpbLTE5OTkyNTUzMjgsLTE2MjAwMDg2NDYsMz
+U4ODk4OTE5XX0=
 -->

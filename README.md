@@ -195,7 +195,7 @@ PARÂMETROS:
     	"itens": "Sem itens"
     }
 ```
-URL: http://localhost/dsw_api/***produto***
+URL: http://localhost/dsw_api/produto
 
 RESPOSTA:
 ```js
@@ -224,7 +224,7 @@ MÉTODO: ***DELETE***
 
 PARÂMETROS: ***{id_prod: 99}*** 
 
-URL: http://localhost/dsw_api/***produto***
+URL: http://localhost/dsw_api/produto
 
 RESPOSTA:
 ```js
@@ -244,7 +244,7 @@ PARÂMETROS: [FormData](https://developer.mozilla.org/pt-BR/docs/Web/API/FormDat
 
 **Dados do único usuário cadastrado*
 
-URL: http://localhost/dsw_api/***login***
+URL: http://localhost/dsw_api/login
 
 RESPOSTA:
 ```js

@@ -16,8 +16,7 @@ Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
 
 # UTILIZAÇÃO
 
-A API disponibiliza dois endpoints em GET, o primeiro para listagem de PRODUTOS cadastrados no banco e o segundo para verificação de autenticação de usuário. 
-Todas as respostas da API são em formado **JSON**.
+A API disponibiliza dois endpoints em GET, o primeiro para listagem de PRODUTOS cadastrados no banco e o segundo para verificação de autenticação de usuário. Todas as respostas da API são em formado **JSON**. Os exemplos consideram que a api foi instalada na pasta ***dsw_api*** dentro do diretório raiz do servidor HTTP.
 
 ## Listando PRODUTOS - GET
 

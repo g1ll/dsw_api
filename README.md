@@ -1,8 +1,8 @@
 # API DSW REAVALIAÇÃO
 
-<div style="text-align:justify">
+
 A API DSW é um exemplo de um CRUD com backend PHP e Banco de Dados Mysql ou Postgres. A API possui apenas uma tabela de PRODUTOS e um endpoint especícfico para acessar as funcionalidades de CRUD para esta tabela. Além do endpoint PRODUTO, a API conta com o endpoint LOGIN para simular a autenticação de usuário necessária em atividades de  POST, PUT ou DELETE.
-</div>
+
 
 # INSTALAÇÃO
 
@@ -22,7 +22,7 @@ $drive="mysql";
 //$drive="pgsql"; //para trocar de SGBD
 ```
 
-A Api utilia o módulo de sobreescrita de URL do Apache, portanto o ***mod_rewriter*** deverá estar habilitado.
+A Api utiliza o módulo de sobreescrita de URL do Apache, portanto o ***mod_rewriter*** deverá estar habilitado.
 Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
 
 [Como habilitar o mod_rewriter no Apache (DEBIAN e Derivados).](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)

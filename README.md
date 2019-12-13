@@ -12,9 +12,7 @@ Para o funcionamento correto da API também é necessário a instalação dos ba
 A Api utilia o módulo de sobreescrita de URL do Apache, portanto o ***mod_rewriter*** deverá estar habilitado.
 Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
 
-DEBIAN E DERIVADOS:
-
-[https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)
+[Como habilitar o mod_rewriter no Apache (DEBIAN e Derivados).](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)
 
 # UTILIZAÇÃO
 

@@ -1,8 +1,8 @@
-# API DSW REAVALIAÇÃO
+<div class="align-center"># API DSW REAVALIAÇÃO</div>
 
-:--:
+<div class="align-justify">
 A API DSW é um exemplo de um CRUD com backend PHP e Banco de Dados Mysql ou Postgres. A API possui apenas uma tabela de PRODUTOS e um endpoint especícfico para acessar as funcionalidades de CRUD para esta tabela. Além do endpoint PRODUTO, a API conta com o endpoint LOGIN para simular a autenticação de usuário necessária em atividades de  POST, PUT ou DELETE.
-:--:
+</div>
 
 # INSTALAÇÃO
 

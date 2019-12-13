@@ -1,14 +1,18 @@
 # API DSW REAVALIAÇÃO
 
-A API DSW é um exemplo de um CRUD com backend PHP e Bancos Mysql ou Postgre. A API possui apenas uma tabela de PRODUTOS e um endpoint especícfico para acessar as funcionalidades de CRUD para esta tabela. Além do endpoint PRODUTO, a API conta com o endpoint LOGIN para simular a autenticação de usuário em atividades de  POST, PUT ou DELETE.
+A API DSW é um exemplo de um CRUD com backend PHP e Banco de Dados Mysql ou Postgres. A API possui apenas uma tabela de PRODUTOS e um endpoint especícfico para acessar as funcionalidades de CRUD para esta tabela. Além do endpoint PRODUTO, a API conta com o endpoint LOGIN para simular a autenticação de usuário necessária em atividades de  POST, PUT ou DELETE.
 
 
 # INSTALAÇÃO
 
-A instalação da API consiste em extrair os arquivos do downloand  ou clonar o repositório no diretório raiz do servidor Web Apache. Normalmente a pasta HTDOCS ou WWW dependendo do seu Sistema Operacional.
+A instalação da API consiste em extrair os arquivos do download  ou clonar o repositório no diretório raiz do servidor Web Apache. Normalmente a pasta HTDOCS ou WWW, depende do seu Sistema Operacional ou configuração do Apache.
 
 Para o funcionamento correto da API também é necessário a instalação dos bancos de dados suportados. Na pasta **_model/dbs_** existem os arquivos para importação do banco de acordo  com o SGDB disponível (mysql ou postgres). 
 
+A Api utilia o módulo de sobreescrita de URL do Apache, portanto o ***mod_rewriter*** deverá estar habilitado.
+Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
+DEBIAN E DERIVADOS:
+[https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)
 
 # UTILIZAÇÃO
 

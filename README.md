@@ -180,15 +180,15 @@ Para a criação de um novo produto é necessário um requisição do tipo **POS
  - itens [ ] Array de itens adicionais (CheckList)
 	
 Exemplo:
- - nome: TESTE
-	 - descricao: novo produto
-	 - qtd_estoque: 21
-	 - preco: 12
-	 - importado: 0
-	 - desco[]: 1
-	 - desco[]: 2
-	 - desco[]: 3
-	 - itens[]: Grantia Extendida
+ 	- nome: TESTE
+	- descricao: novo produto
+	- qtd_estoque: 21
+	- preco: 12
+	- importado: 0
+	- desco[]: 1
+	- desco[]: 2
+	- desco[]: 3
+	- itens[]: Grantia Extendida
 
 ## Editando um PRODUTO - PUT
 

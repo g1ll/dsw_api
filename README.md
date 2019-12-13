@@ -7,7 +7,7 @@ A API DSW é um exemplo de um CRUD com backend PHP e Banco de Dados Mysql ou Pos
 
 A instalação da API consiste em extrair os arquivos do download  ou clonar o repositório no diretório raiz do servidor Web Apache. Normalmente a pasta HTDOCS ou WWW, depende do seu Sistema Operacional ou configuração do Apache.
 
-Para o funcionamento correto da API também é necessário a instalação dos bancos de dados suportados. Na pasta **_model/dbs_** existem os arquivos para importação do banco de acordo  com o SGDB disponível (mysql ou postgres). 
+Para o funcionamento correto da API também é necessário a instalação dos bancos de dados suportados. Na pasta **_model/dbs_** existem os arquivos para importação do banco de acordo  com o SGDB disponível (mysql ou postgres). As informações de acesso ao banco de dados devem ser configuradas no arquivo ***$config.php***.
 
 A Api utilia o módulo de sobreescrita de URL do Apache, portanto o ***mod_rewriter*** deverá estar habilitado.
 Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.

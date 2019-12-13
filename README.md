@@ -165,7 +165,7 @@ URL :  http://localhost/dsw_api/produto/-1/3/1
 RESPOSTA: Retorna um lista de objetos JSON com o s ***três últimos*** produtos, em ordem decrescente.
 
 
-## Criando um novo PRODUTOS - POST
+## Criando um novo PRODUTO - POST
 
 Para a criação de um novo produto é necessário um requisição do tipo **POST** para o endpoint ***produto***. Nesta operação o usuário deverá estar devidamente aunteticado, o que se resume a existir uma sessão no PHP. Na seção de Login pode ser visto como autenticar o usuário. Os parâmetros devem ser enviados via POST e no formato do objeto [FormData](https://developer.mozilla.org/pt-BR/docs/Web/API/FormData).
 

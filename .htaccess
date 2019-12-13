@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+#  RewriteBase /
+  RewriteBase /2019/tsi/dsw/dsw_api/
+  RewriteCond $1 !^(index\.php|images|assets|robots\.txt|bootstrap.min.css\.map)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?query=$1
+  php_value error_log all_errors.log
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  ErrorDocument 404 /2019/tsi/dsw/dsw_api/404.json 
+  ErrorDocument 403 /2019/tsi/dsw/dsw_api/404.json 
+</IfModule>
+##para não listar arquivos e subpastas do servidor
+Options -Indexes
+ErrorDocument 404 /2019/tsi/dsw/dsw_api/404.json 
+ErrorDocument 403 /2019/tsi/dsw/dsw_api/404.json 
+
+<Files "all_errors.log">
+  Require all denied
+</Files>

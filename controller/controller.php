@@ -57,14 +57,7 @@ function route($query = null)
         else sendjson(['confirm' => false, 'info' =>'Erro de requisição','error'=>"ERROR ACTION REQUEST"]);
 
     } else {
-        header('Content-Type: text/html');
-        if (file_exists("$view/$params[0].html")) {
-            header("Location:$view/$params[0].html");
-        } else {
-            if($query===null)
-                header("Location:$view/index.html");
-            else pageNotFound($view);
-        }
+        sendjson(['msg'=>'BAD REQUEST']);
     }
 }
 
@@ -74,13 +67,6 @@ function sendjson($var = NULL)
     echo json_encode($var);
 }
 
-function pageNotFound($view)
-{
-    global $base_url;
-//    debug("http://$_SERVER[HTTP_HOST]$base_url/$view/404.html");
-    header("Location:http://$_SERVER[HTTP_HOST]$base_url/$view/404.html");
-    die;
-}
 
 function debug($var)
 {

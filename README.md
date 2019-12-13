@@ -19,7 +19,9 @@ Todas as respostas da API são em formado **JSON**.
 
 Para listar todos os produtos do banco de dados basta acessar o endpoint **_produto_**.  As operações de leitura não necessitam de autenticação do usuário.
 Exemplo:
+
 URL :  http://localhost/dsw_api/produto/
+
 RESPOSTA:
 
 ```js 
@@ -87,6 +89,7 @@ RESPOSTA:
 É possível acessar um único produto pelo seu ID apenas colocando o valor do ID depois do endpoint _produto_  ( http://.../.../_produto_/**ID**) como no exemplo abaixo:
 
 URL :  http://localhost/dsw_api/produto/3
+
 RESPOSTA:
 ```js
     {
@@ -126,12 +129,19 @@ RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID
 
 Para listar os últimos produtos cadastrados no banco de dados deverá ser passado o valor do **ID** negativo. Por exemplo, -1, no parâmetro ID significa o último elemento, independente do seu ID verdadeiro no banco. Também é possível combinar com o parâmetro de quantidade e ordenação. Veja alguns exemplos:
 URL :  http://localhost/dsw_api/produto/-1
+
 RESPOSTA: Retorna um o bjeto JSON representando o ***último*** produto cadastrado.
+
 URL :  http://localhost/dsw_api/produto/-1
+
 RESPOSTA: Retorna um o bjeto JSON representando o ***penúltimo*** produto cadastrado.
+
 URL :  http://localhost/dsw_api/produto/-1/3
+
 RESPOSTA: Retorna um lista de objetos JSON com o s ***três últimos*** produtos.
+
 URL :  http://localhost/dsw_api/produto/-1/3/1
+
 RESPOSTA: Retorna um lista de objetos JSON com o s ***três últimos*** produtos, em ordem decrescente.
 
 
@@ -165,6 +175,7 @@ Exemplo:
 Para a atualização dos dados de um PRODUTO já cadastrado no banco, a API utiliza o mesmo endpoint ***produto*** porem com o verbo **PUT**. Neste caso os parâmtros são os mesmos da operação de criação, porém o parâmetro ***ID_PROD***, com o ID do produto, é necessário. O envio dos dados é feito pelo CORPO (BODY) da requisição em Formato JSON. Pode ser usado o JSON.stringify(obj) para converter o objeto com os dados a serem enviados na requisição. Para esta operação o usuário deverá estar autenticado, caso contrário a API retornará um JSON com a mensagem de erro de permissão.
 
 MÉTODO: ***PUT***
+
 PARÂMETROS: 
 ```js
    {
@@ -179,6 +190,7 @@ PARÂMETROS:
     }
 ```
 URL: http://localhost/dsw_api/***produto***
+
 RESPOSTA:
 ```js
 {
@@ -201,9 +213,13 @@ RESPOSTA:
 
 Para DELETAR  um PRODUTO já cadastrado no banco, a API utiliza o mesmo endpoint ***produto*** porem com o verbo **DELETE**. Para esta operação o único parâmtro necessário é o ***ID_PROD***, com o ID do produto a ser excluido. O envio do parâmetro é feito pelo CORPO (BODY) da requisição em Formato JSON. Pode ser usado o JSON.stringify(obj) para converter o objeto com os dados a serem enviados na requisição. Para esta operação o usuário deverá estar autenticado, caso contrário a API retornará um JSON com a mensagem de erro de permissão.
 
+
 MÉTODO: ***DELETE***
+
 PARÂMETROS: ***{id_prod: 99}*** 
+
 URL: http://localhost/dsw_api/***produto***
+
 RESPOSTA:
 ```js
 {"confirm":  true, "msg":  "DELETE PROD ID: 99"}
@@ -213,13 +229,17 @@ RESPOSTA:
 
 Para a autenticação do usuário é necessária uma requisição do tipo **POST** para o endpoint ***login*** enviando os parâmetros *user* e *key* com os dados de autenticação. O formato de envio dos dados na requisição deverá ser do tipo *POST* e através do objeto *[FormData](https://developer.mozilla.org/pt-BR/docs/Web/API/FormData)*. A API deverá retornar um JSON com o campo booleano "login" para a verificação.
 
+
 MÉTODO: POST
+
 PARÂMETROS: [FormData](https://developer.mozilla.org/pt-BR/docs/Web/API/FormData)
  - **user** :  *ts1*
  - **key** :  *ts1@dsw*
+
 **Dados do único usuário cadastrado*
 
 URL: http://localhost/dsw_api/***login***
+
 RESPOSTA:
 ```js
 { "login":  true }
@@ -227,5 +247,5 @@ RESPOSTA:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4ODk4OTE5XX0=
+eyJoaXN0b3J5IjpbMTE1NTQzMjY1MSwzNTg4OTg5MTldfQ==
 -->

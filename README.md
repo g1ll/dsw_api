@@ -116,13 +116,16 @@ RESPOSTA:
 #### Quantidade de Produtos
 
 Para controlar quantos produtos serão listados é possível passar a quantidade (QTD) como segundo parâmetro depois do ID ( http://.../.../_produto_/ID/**QTD**)).
+
 URL :  http://localhost/dsw_api/produto/1/5
-RESPOSTA: Retornará uma lista de objetos JSON com os 35 protudos a apartir do ID 1 inclusive.
+
+RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID 1 inclusive.
 
 #### Ordem de ID Decrescente 
 
 Para controlar quantos produtos serão listados é possível passar a quantidade (QTD) como segundo parâmetro depois do ID ( http://.../.../_produto_/ID/**QTD**)).
 URL :  http://localhost/dsw_api/produto/1/5/1
+
 RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID 1 inclusive em ordem DECRESCENTE, ou seja, o ID 5 será o primeiro e o ID 1 o último da lista.
 
 #### Listagem Reversa
@@ -247,5 +250,5 @@ RESPOSTA:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTQzMjY1MSwzNTg4OTg5MTldfQ==
+eyJoaXN0b3J5IjpbLTE2MjAwMDg2NDYsMzU4ODk4OTE5XX0=
 -->

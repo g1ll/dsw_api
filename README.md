@@ -26,7 +26,7 @@ Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
 
 [Como habilitar o mod_rewriter no Apache (DEBIAN e Derivados).](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)
 
-Após configurar ó módulo no Apache ser necessário alterar a URL da API no arquivo ***.htaccess***. Edite a opção *** RewriteBase*** com o caminho correto para o destino ao qual foi instalada a API no seu servidor.
+Após configurar ó módulo _mod_rewrite_ no Apache será necessário alterar a URL da API no arquivo ***.htaccess***. Edite a opção ***RewriteBase*** com o caminho correto para o destino ao qual foi instalada a API no seu servidor.
 Exemplo:
 
 ```.htaccess
@@ -38,7 +38,7 @@ Exemplo:
 	</IfModule>
 ...
 ```
-O valor do *** RewriteBase*** será a URL da API no servidor local (http://locahost/caminho/da/api).
+O valor do ***RewriteBase*** será a URL da API no servidor local (http://locahost/caminho/da/api).
 
 # UTILIZAÇÃO
 

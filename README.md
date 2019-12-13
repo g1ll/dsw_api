@@ -26,6 +26,20 @@ Veja aqui como habilitar o módulo de sobreescrita de URL do Apache.
 
 [Como habilitar o mod_rewriter no Apache (DEBIAN e Derivados).](https://www.digitalocean.com/community/tutorials/como-reescrever-urls-com-mod_rewrite-para-apache-no-debian-10-pt)
 
+Após configurar ó módulo no Apache ser necessário alterar a URL da API no arquivo ***.htaccess***. Edite a opção *** RewriteBase*** com o caminho correto para o destino ao qual foi instalada a API no seu servidor.
+Exemplo:
+
+```.htaccess
+...
+	<IfModule mod_rewrite.c>
+	...
+		RewriteBase /caminho/da/api/
+	...
+	</IfModule>
+...
+```
+O valor do *** RewriteBase*** será a URL da API no servidor local (http://locahost/caminho/da/api).
+
 # UTILIZAÇÃO
 
 A API disponibiliza dois endpoints em GET, o primeiro para listagem de PRODUTOS cadastrados no banco e o segundo para verificação de autenticação de usuário. Todas as respostas da API são em formado **JSON**. Os exemplos consideram que a api foi instalada na pasta ***dsw_api*** dentro do diretório raiz do servidor HTTP.

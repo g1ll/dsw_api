@@ -38,7 +38,7 @@ Exemplo:
 	</IfModule>
 ...
 ```
-O valor do ***RewriteBase*** será a URL da API no servidor local \(http://localhost/caminho/da/api\).
+O valor do ***RewriteBase*** será a URL da API no servidor local (http://localhost/caminho/da/api).
 
 # UTILIZAÇÃO
 

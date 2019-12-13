@@ -124,6 +124,7 @@ RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID
 #### Ordem de ID Decrescente 
 
 Para controlar quantos produtos serão listados é possível passar a quantidade (QTD) como segundo parâmetro depois do ID ( http://.../.../_produto_/ID/**QTD**)).
+
 URL :  http://localhost/dsw_api/produto/1/5/1
 
 RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID 1 inclusive em ordem DECRESCENTE, ou seja, o ID 5 será o primeiro e o ID 1 o último da lista.
@@ -131,6 +132,7 @@ RESPOSTA: Retornará uma lista de objetos JSON com os 5 protudos a apartir do ID
 #### Listagem Reversa
 
 Para listar os últimos produtos cadastrados no banco de dados deverá ser passado o valor do **ID** negativo. Por exemplo, -1, no parâmetro ID significa o último elemento, independente do seu ID verdadeiro no banco. Também é possível combinar com o parâmetro de quantidade e ordenação. Veja alguns exemplos:
+
 URL :  http://localhost/dsw_api/produto/-1
 
 RESPOSTA: Retorna um o bjeto JSON representando o ***último*** produto cadastrado.
@@ -250,5 +252,6 @@ RESPOSTA:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjAwMDg2NDYsMzU4ODk4OTE5XX0=
+eyJoaXN0b3J5IjpbLTEzMDI3MjU2MzgsLTE2MjAwMDg2NDYsMz
+U4ODk4OTE5XX0=
 -->
